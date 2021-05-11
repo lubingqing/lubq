@@ -1,0 +1,494 @@
+* {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none
+}
+
+body,ul,li,p,h1,h2,h3,h4,h5,h6,input,textarea,button,img {
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    -webkit-user-select: text
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+b {
+    font-weight: 400
+}
+
+html {
+    font-size: 20px;
+    background: #fff;
+    color: #686868;
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size:20px!important
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    html {
+        font-size:22.5px!important
+    }
+}
+
+@media only screen and (min-width: 365px) {
+    html {
+        font-size:23px!important
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size:23.5px!important
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    html {
+        font-size:24.5px!important
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    html {
+        font-size:25px!important
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    html {
+        font-size:26.8px!important
+    }
+}
+
+@media only screen and (min-width: 432px) {
+    html {
+        font-size:27.4px!important
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size:30px!important
+    }
+}
+
+@media only screen and (min-width: 569px) {
+    html {
+        font-size:35px!important
+    }
+}
+
+@media only screen and (min-width: 569px) {
+    html {
+        font-size:40px!important
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: .6rem
+}
+#app{
+    padding-bottom: 3rem;
+    font-size: 0.7rem;
+}
+.nav{
+
+}
+.nav h2{
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.7rem;
+}
+
+.icon_back{
+    width: 0.4rem;
+    height: 0.75rem;
+    background: url(../images/icon_back.png) no-repeat;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+}
+.header{
+    height: 10rem;
+    background: url(../images/headerBG.png) no-repeat;
+    background-size: cover;
+}
+.header>img{
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+}
+.menu{
+    width: 83%;
+    margin: auto;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 5px #cacfd3;
+    padding: 20px;
+    margin-top: -60px;
+}
+.menuUl{
+    display: flex;
+}
+.menuUl li{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    color: #099A70;
+}
+.menuUl li:nth-child(2):before{
+    border: 1px solid #f1f1f1;
+    height: 56px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.menuUl li:nth-child(2):after{
+    border: 1px solid #f1f1f1;
+    height: 56px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menuUl li>img{
+    height: 1.7rem;
+    margin-bottom: 5px;
+}
+.aptDiv{
+    margin-top: 10px;
+    border-top: 1px solid #f1f1f1;
+}
+.aptDiv>h4{
+    border-top: 10px solid #F7F8FD;
+    padding: 10px 20px;
+}
+.aptLine{
+    background: #23C193;
+    height: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.aptUl>li{
+    overflow: hidden;
+    position: relative;
+    width: 88%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 5px #cacfd3;
+    padding: 20px 10px;
+    font-size: 0.6rem;
+    color: #686868;
+}
+.aptInfo{
+    margin-bottom: 3px;
+}
+.aptInfo h3{
+    display: inline-block;
+    color: #0f1115;
+    margin-right: 10px;
+}
+.aptInfo i{
+    float: right;
+    font-style: normal;
+}
+.aptInfo3span{
+    display: flex;
+}
+.aptInfo3span span{
+    flex: 1;
+}
+.aptInfo3span span:nth-child(2){
+    flex: 2;
+}
+.aptInfo3span b{
+    color: #099a70;
+}
+.aptStatus h4{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #23C193;
+    margin-bottom: 5px;
+}
+.aptStatusUl{
+    display: flex;
+}
+.aptStatusUl li{
+    flex: 1;
+    text-align: center;
+}
+.aptStatusUl li:nth-child(2){
+    flex: 0.5;
+}
+.aptStatusUl li:nth-child(4){
+    flex: 0.5;
+}
+.aptStatusUl li>img{
+    width: 2rem;
+}
+.aptStatusArrow{
+    padding-top: 10px;
+}
+.aptCode{
+    text-align: center;
+}
+.aptCode p{
+    font-size: 1.3rem;
+    color: #2f2f2f;
+    font-weight: bold;
+}
+.aptCode img{
+    width: 80%;
+}
+.lineA{
+    border-bottom: 1px solid #dedfe3;
+}
+.formLine{
+    height: 10px;
+    background: #f4f4f6;
+    border-top: 1px solid #dedfe3;
+    border-bottom: 1px solid #dedfe3;
+}
+.formUl{
+    font-size: 0.6rem;
+    margin-left: 15px;
+}
+.sendCode{
+    border-left: 1px solid #dedfe3;
+    position: absolute;
+    right: 20px;
+    padding-left: 20px;
+    height: 1rem;
+    line-height: 1rem;
+    top: 13px;
+}
+.formUl li{
+    padding: 10px 0;
+    border-bottom: 1px solid #dedfe3;
+    position: relative;
+}
+.formUl li:last-child{
+    border-bottom: none;
+}
+.formUl li label{
+    color: #727272;
+    width: 3.6rem;
+    display: inline-block;
+}
+.formUl li label b{
+    width: 0.5rem;
+    display: inline-block;
+}
+.formUl li input[type='text']{
+    padding: 5px;
+    font-size: 0.7rem;
+    width: 8rem;
+    border: none;
+}
+.formUl li p{
+    display: inline-block;
+    margin-left: 5px;
+    margin-left: 10px;
+}
+.formUl .moreArrow {
+    background: url("../images/icon_arrow.png?__sprite") no-repeat #fff 96% center;
+    background-size: 0.3rem 0.6rem;
+}
+.btnGreen{
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background: #006442;
+    color: #fff;
+    border-radius: 20px;
+}
+.btnGreen2{
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    background-image: linear-gradient(#54cf26, #1e9821);
+    box-shadow: 0px 0px 5px #ccc;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    right: 10px;
+    top: 27px;
+    position: absolute;
+}
+.questionUl{
+    font-size: 0.6rem;
+    padding:15px;
+}
+.questionUl h3{
+    font-weight: normal;
+    font-size: 0.6rem;
+}
+.questionUl p{
+    padding: 0 15px;
+    color: #000;
+    line-height: 1rem;
+}
+
+.questionUl label{
+    margin-left: 5px;
+}
+
+.tuanti{
+    padding: 0 15px;
+    font-size: 0.6rem;
+}
+.tuanti h4{
+    text-align: center;
+    line-height: 1.5rem;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 6px;
+    font-size: 0.7rem;
+}
+.tuanti p {
+    line-height: 1.2rem;
+}
+.tuanti p b{
+    color: #16ad60;
+}
+.tuanti p span{
+    float: right;
+}
+.ttCode{
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px 0;
+}
+.ttCode img{
+    width: 60%;
+}
+.ttPersons h4{
+    border-top: 10px solid #F7F8FD;
+    padding: 10px 20px;
+}
+.ttPersonsUl li{
+    overflow: hidden;
+    position: relative;
+    width: 86%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 3px #cacfd3;
+    padding: 10px 15px;
+    font-size: 0.6rem;
+    color: #686868;
+}
+.ttPersonsUl li:before{
+    display: inline-block;
+    position: absolute;
+    content: "";
+    height: 80px;
+    border: 3px dashed #ccc;
+    left: 0;
+    top: 0;
+}
+.ttPersonsUl h5{
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    color: #333;
+}
+.ttPersonsUl h5 span{
+    font-size: 0.6rem;
+    color: #686868;
+}
+
+.ttPersonsUl b{
+    color: #099a70;
+}
+.maskLayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+.maskBtn{
+    text-align: center;
+}
+.wAlert{
+    width: 12rem;
+    min-height: 6rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7rem;
+    margin-top: -4rem;
+    border-radius: 10px;
+    padding: 0 1rem;
+}
+.wAlert h4{
+    text-align: center;
+    line-height: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #f1f1f1;
+}
+.wAlert p{
+    line-height: 1.2rem;
+}
+
+.wAlertBtnGreen{
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    background-image: linear-gradient(#54cf26, #1e9821);
+    box-shadow: 0px 0px 5px #ccc;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    margin: 1rem 0.5rem;
+}
+
+.wAlertBtn{
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    background-image: linear-gradient(#aaaaaa, #5a5a5a);
+    box-shadow: 0px 0px 5px #ccc;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    margin: 1rem 0.5rem;
+}
+
+
+
+
+
+
+
